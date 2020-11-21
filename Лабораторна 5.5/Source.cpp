@@ -1,5 +1,9 @@
+//lab_5.5
+
 #include <iostream>
+
 using namespace std;
+
 int gcd(int n, int m)
 {
     if (n == 0)
@@ -12,6 +16,7 @@ int gcd(int n, int m)
         return gcd(n - m, m);
     return gcd(n, m - n);
 }
+
 int gcd2(int r, int m)
 {
     if (r == 0)
@@ -35,9 +40,5 @@ int main()
     cout << "gcd(n,m)" << " is " << gcd(n, m);
     cout << endl;
     cout << "gcd(m,r)" << " is " << gcd2(r, m);
-    cout << endl;
-    cout << "GCD of " << n << " and " << m << " is " << gcd(n, m);
-    cout << endl;
-    cout << "GCD2 of " << m << " and " << r << " is " << gcd2(r, m);
     return 0;
 }
